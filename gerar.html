@@ -37,44 +37,54 @@
 
           <div class="col-9">
                <div class="row p-3">
-                    <h5 class="col-12">1. Tipo de jogo</h5>  
-               
-                    <button class="ml-4 btn btn-outline-primary">Plataforma</button>
+                    <h5 id="teste2" class="col-12" >1. Tipo de jogo</h5>  
+                
+                    <button class="ml-4 btn btn-outline-primary" data-toggle="button" onclick="setTipo('plataforma')">
+                         Plataforma
+                    </button>
                                      
                </div>
 
                <div class="row p-3">
                     <h5 class="col-12">2. Cenário</h5>
                     
-                    <button class="ml-4 btn btn-outline-primary">Deserto</button>
+                    <button class="ml-4 btn btn-outline-primary" data-toggle="button" onclick="setCenario('deserto')">
+                         Deserto
+                    </button>
                                          
                </div>
 
                <div class="row p-3">
                     <h5 class="col-12">3. Customização</h5>
-                    <form class="form-group ml-4">
-                         <label>Duração:</label>
-                         <input class="form-control" type="time"/>
-                    </form>
-                    <!--
-                    <ul class="list-group col-12 ml-4">
-                         <p>Instrumento:</p>
-                         <li class="list-group-item">Flauta</li>
-                         <li class="list-group-item">Tambores</li>
-                         <li class="list-group-item">Saxofone</li>
-                         <li class="list-group-item">Piano</li>
-                    </ul>
-                    --> 
+
                     <div class="col-12">
                          <p class="m-2">Instrumento:</p>
-                         <button class="m-2 btn btn-outline-primary">Flauta</button>
-                         <button class="m-2 btn btn-outline-primary">Tambores</button>
-                         <button class="m-2 btn btn-outline-primary">Saxofone</button>
-                         <button class="m-2 btn btn-outline-primary">Piano</button>
-                    </div> 
+
+                         <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('flauta')">
+                              Flauta
+                         </button>
+                         
+                         <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('tambores')">
+                              Tambores
+                         </button>
+
+                         <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('saxofone')">
+                              Saxofone
+                         </button>
+
+                         <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('piano')">
+                              Piano
+                         </button>
+                    </div>
+ 
+                    <form class="form-group ml-4">
+                         <label>Duração:</label>
+                         <input id="duracao" class="form-control" type="time"/>
+                    </form>
+
                </div>
 
-               <button class="btn btn-lg btn-primary m-4">Gerar</button>
+               <input class="btn btn-primary btn-lg ml-4" value="Gerar" type="submit" onclick="setDuracao(); geraString(); teste2();"/>
 
           </div>
 
@@ -86,6 +96,9 @@
           </nav>
      </footer>
 
+     <script src="gerar.js"></script>
+
  </body>
 
 </html>
+
