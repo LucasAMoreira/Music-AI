@@ -24,46 +24,55 @@
      <header>
           <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                <a class="navbar-brand" href="./index.html">Music AI</a>
-               <ul class="navbar-nav">
-                    <li class="nav-item">
-                         <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="cadastro.html">Cadastro</a>
-                    </li>					
-               </ul>
           </nav>
      </header>
 
      <section class="container-fluid row">
 
+          <div class="bg-dark fixed-left col-2" style="color:white">
+                 <ul class="navbar-nav">
+                      <li class="nav-item"style="color:white">
+                           <a class="nav-link" href="index.html"style="color:white">Página inicial</a>
+                      </li>
+                 </ul>       
+          </div>
 
-          <div  class="col-3 bd-sidebar bg-light">
-
+          <div class="navbar navbar-expand-sm col-10 barra-lateral bg-white">
 
           </div>
 
-          <div class="col-9">
-               <div class="row p-3">
-                    <h5 id="teste2" class="col-12" >1. Tipo de jogo</h5>  
-                
-                    <button class="ml-4 btn btn-outline-primary" data-toggle="button" onclick="setTipo('plataforma')">
-                         Plataforma
-                    </button>
-                                     
-               </div>
+          <div class="bg-dark fixed-left col-2 titulo-lateral">
+                <h4 style="color:white">Instrumentos</h4>       
+          </div>
+
+          <div class="navbar navbar-expand-sm col-10 barra-lateral bg-white">
+
+          </div>
+
+          <!--LISTA-->
+          <div class="bg-light fixed-left col-2">  
+                 <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                         <a class="nav-link" href="gerar.html">- Flauta</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="gerar.html">- Tambores</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="gerar.html">- Saxofone</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="gerar.html">- Piano</a>
+                    </li>
+               </ul>
+          </div>
+
+
+          <div class="col-10">
 
                <div class="row p-3">
-                    <h5 class="col-12">2. Cenário</h5>
-                    
-                    <button class="ml-4 btn btn-outline-primary" data-toggle="button" onclick="setCenario('deserto')">
-                         Deserto
-                    </button>
-                                         
-               </div>
-
-               <div class="row p-3">
-                    <h5 class="col-12">3. Customização</h5>
+                    <h5 class="col-12" id="teste2">1. Customização</h5>
 
                     <div class="col-12">
                          <p class="m-2">Instrumento:</p>
@@ -71,20 +80,21 @@
                          <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('flauta')">
                               Flauta
                          </button>
-                         
+                         <br>
                          <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('tambores')">
                               Tambores
                          </button>
-
+                         <br>
                          <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('saxofone')">
                               Saxofone
                          </button>
-
+                         <br>
                          <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setInstrumento('piano')">
                               Piano
                          </button>
                     </div>
  
+                    <br>
                     <form class="form-group ml-4">
                          <label>Duração:</label>
                          <input id="duracao" class="form-control" type="time"/>
@@ -99,7 +109,7 @@
      </section>
 
      <footer class="page-footer">
-          <nav class="container-fluid fixed-bottom bg-light p-3 p-md-5">
+          <nav class="container-fluid fixed-bottom bg-dark p-3 p-md-5">
                <p>Music AI</p>
           </nav>
      </footer>
@@ -109,4 +119,3 @@
  </body>
 
 </html>
-
