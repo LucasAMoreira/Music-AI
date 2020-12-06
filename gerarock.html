@@ -38,6 +38,13 @@
                	background-image:url(imagens/guitarra.jpg);
           }
 
+          .botao{
+
+          	border-radius:5pt;
+                cursor:pointer;
+                color:white;
+          }
+
      </style>
 
  </head>
@@ -46,7 +53,11 @@
 
      <header>
           <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-               <a class="navbar-brand" href="./index.html">Music AI</a>
+               <a class="navbar-brand" href="./index.html">
+                    <img src="imagens/logo.png" alt="Logo" style="width:40px;">
+                    Music AI
+               </a>
+               
           </nav>
      </header>
 
@@ -114,32 +125,33 @@
 
           <div class="col-10">
 
+               <div class="row p-3 ">
                <div class="row p-3">
                     <h5 class="col-12" id="teste2">1. Selecione o instrumento</h5>
-                        
-                    <div class= "p-md-5 ml-5 mr-3 col-2 piano" style="color:white" onclick="setInstrumento('piano'); mostraInstrumento()" >
-                               PIANO
-                    </div>                            
-                        
-                    <div class="p-md-5 mr-3  col-2 saxofone" style="color:white;" onclick="setInstrumento('saxofone'); mostraInstrumento()"">
-                              SAXOFONE                                                          
-                    </div>
 
-                    <div class="p-md-5 mr-3 col-2 tambor" style="color:white;" onclick="setInstrumento('tambores'); mostraInstrumento()"">
-                              TAMBORES
-                    </div>
+                    <button class="btn col-2 ml-5 m-2 p-5 botao piano" data-toggle="button" onclick="setInstrumento('piano'); mostraInstrumento(); ">
+                            PIANO
+                    </button>
 
-                    <div class="p-md-5 mr-3 col-2 flauta" style="color:white;" onclick="setInstrumento('flauta'); mostraInstrumento()"">
-                              FLAUTA                           
-                    </div>
+                    <button class="btn col-2 m-2 botao saxofone" data-toggle="button" onclick="setInstrumento('saxofone'); mostraInstrumento();">
+                            SAXOFONE
+                    </button>
 
-                    <div class="p-md-5  mr-3 col-2 harpa" style="color:white;" onclick="setInstrumento('harpa');; mostraInstrumento()"">
-                              HARPA                          
-                    </div>
+                    <button class="btn col-2 m-2 botao tambor" data-toggle="button" onclick="setInstrumento('tambores'); mostraInstrumento();">
+                            TAMBORES
+                    </button>
+                    <button class="btn col-2 m-2 botao flauta" data-toggle="button" onclick=" setInstrumento('flauta' ); mostraInstrumento();">
+                            FLAUTA
+                    </button>
 
-                    <div class="p-md-5 ml-5 m-2 mr-3 col-2 guitarra" style="color:white;" onclick="setInstrumento('guitarra'); mostraInstrumento()"">
-                              GUITARRA                           
-                    </div>
+                    <button class="btn col-2 m-2 botao harpa" data-toggle="button" onclick="setInstrumento('harpa'); mostraInstrumento();">
+                            HARPA
+                    </button>
+
+                    <button class="btn col-2 ml-5 m-2 p-5 botao guitarra" data-toggle="button" onclick="setInstrumento('guitarra'); mostraInstrumento();">
+                            GUITARRA
+                    </button>
+               </div>
                </div>
 
                <p id="selecionado" class="ml-5" >Nenhum instrumento selecionado.</p>
@@ -168,7 +180,7 @@
                     </button>
                </div>
 
-               <input class="btn btn-primary btn-sm ml-4" value="GERAR MÚSICA" type="submit" onclick="setDuracao(); geraString(); teste2();"/>
+               <input class="btn btn-primary btn-sm ml-5" value="GERAR MÚSICA" type="submit" onclick="setDuracao(); geraString(); teste2();"/>
 
                <div class="col-4  p-3 m-2 mb-5 ml-4" id="musica">
 
@@ -192,4 +204,3 @@
  </body>
 
 </html>
-
