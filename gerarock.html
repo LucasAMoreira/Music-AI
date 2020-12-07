@@ -8,6 +8,8 @@
      <!-- Latest compiled and minified CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+     <link rel="stylesheet" href="./estilos.css">
+
      <!-- jQuery library -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -39,11 +41,10 @@
           }
 
           .botao{
-
           	border-radius:5pt;
-                cursor:pointer;
                 color:white;
           }
+
 
      </style>
 
@@ -83,43 +84,44 @@
           </div>
 
           <div class="bg-dark fixed-left col-2 titulo-lateral p-3">
-                <h5 style="color:white">Gêneros Musicais</h5>       
+                <h6 style="color:white">Gêneros Musicais</h6>       
           </div>
 
           <div class="navbar navbar-expand-sm col-10 barra-lateral bg-white">
-               <h2>Gênero musical-> ROCK</h2>
+               <h2>Gênero musical -> ROCK</h2>
           </div>
 
+
           <!--LISTA-->
-           <div class="bg-light fixed-left col-2">  
-                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                         <a class="nav-link" href="gerajazz.html">- Jazz</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="gerarock.html">- Rock</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="">- Bossa Nova</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="">- Clássica</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="">- MPB</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="">- Samba</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="">- Sertanejo</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="">- Soul</a>
-                    </li>
-
-
-               </ul>
+           <div class="bg-light fixed-left col-2">
+                 <nav class="navbar-nav navbar-light ">
+                      <ul class="navbar-nav">
+                         <li class="nav-item item">
+                              <a class="nav-link pl-3" href="gerajazz.html">- Jazz</a>
+                         </li>
+                         <li class="nav-item bg-primary item">
+                              <a class="nav-link pl-3" href="gerarock.html" style="color:white;">- Rock</a>
+                         </li>
+                         <li class="nav-item item">
+                              <a class="nav-link pl-3" href="">- Bossa Nova</a>
+                         </li>
+                         <li class="nav-item item">
+                              <a class="nav-link pl-3" href="">- Clássica</a>
+                         </li>
+                         <li class="nav-item item">
+                              <a class="nav-link pl-3" href="">- MPB</a>
+                         </li>
+                         <li class="nav-item item">
+                              <a class="nav-link pl-3" href="">- Samba</a>
+                         </li>
+                         <li class="nav-item item">
+                              <a class="nav-link pl-3" href="">- Sertanejo</a>
+                         </li>
+                         <li class="nav-item item">
+                               <a class="nav-link pl-3" href="">- Soul</a>
+                         </li>
+                    <!--</ul>-->
+               </nav>
           </div>
 
 
@@ -156,7 +158,7 @@
 
                <p id="selecionado" class="ml-5" >Nenhum instrumento selecionado.</p>
 
-               <div class="row p-3">
+               <div class="row p-3" style="display:none;">
                     <h5 class="col-12" id="teste2">2. Selecione a duração</h5>
                     <form class="form-group ml-5">
                          <label>Duração:</label>
@@ -165,18 +167,18 @@
                </div>
 
                <div class="row p-3">
-                    <h5 class="col-12" id="teste2">3. Selecione o andamento</h5>
+                    <h5 class="col-12">2. Selecione a duração</h5>
 
-                    <button class="m-2 btn btn-outline-primary ml-5" data-toggle="button" onclick="setAndamento('devagar')">
-                            Devagar
+                    <button class="m-2 btn btn-outline-primary ml-5" data-toggle="button" onclick="setAndamento('20-40s')">
+                            20-40s
                     </button>
 
-                    <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setAndamento('medio')">
-                            Médio
+                    <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setAndamento('40-80s')">
+                            40-80s
                     </button>
 
-                    <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setAndamento('rapido')">
-                            Rápido
+                    <button class="m-2 btn btn-outline-primary" data-toggle="button" onclick="setAndamento('120-160')">
+                            120-160s
                     </button>
                </div>
 
