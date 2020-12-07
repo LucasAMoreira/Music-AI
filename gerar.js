@@ -29,12 +29,12 @@ function setAndamento(andamento){
 //Avisa para usuário qual é o instrumento selecionado
 function mostraInstrumento(){
      var selecionado=document.getElementById("selecionado");
-     selecionado.innerHTML="Instrumento selecionado: <strong>"+this.instrumento+"</strong>";
+     selecionado.innerHTML="Instrumento selecionado: <strong>"+this.instrumento+"</strong>";   
 }
 
 // Gera String com os parâmetros da música.
 function geraString(){
-     this.parametros="python composer.py "+tipo+" "+cenario+" "+duracao+" "+instrumento+" "+andamento;;
+     this.parametros="python composer.py "+tipo+" "+cenario+" "+instrumento+" "+andamento;
      const proxyurl = "https://cors-anywhere.herokuapp.com/";
 fetch('http://localhost:3000',{method:'POST',body:'Humongous dong'}).then(results=>results.json()).then(console.log);
 
