@@ -1,9 +1,12 @@
 .item{
-     margin-left:-9%;
-     margin-right:-9.5%;
+
 }
 
 .item:hover{
      background-color:gray;
      color:white;
+}
+
+.cor {
+     background-color: #08003b;
 }
